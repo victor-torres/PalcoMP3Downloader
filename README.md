@@ -1,6 +1,8 @@
 Palco MP3 Downloader
 ====================
 
+![ScreenShot](https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash3/t1/1800473_806368846043574_611334801_n.jpg)
+
 Faça o download de músicas de um artista do site Palco MP3 todas de uma vez ou apenas algumas.
 
 Entre no site http://palcomp3.com.br/ e busque pela página do seu artista preferido. O ID do artista é o nome que aparece no final do endereço do site quando você está na página do artista. É o "username" dele, apelido, etc...
@@ -18,6 +20,15 @@ Algumas músicas podem não estar disponíveis, então caso haja alguma falha, u
 Qualquer dúvida, mande-me um feedback por aqui ou por e-mail.
 
 Sinta-se à vontade para contribuir com o projeto.
+
+Download
+========
+
+Por enquanto o download tá disponível através deste link no DropBox: https://dl.dropboxusercontent.com/u/65368913/Palco%20MP3%20Downloader%20-%20Victor%20Torres.zip
+
+Pode ser que você precise instalar o Java, então, caso issoa conteça, acesse este outro link: http://www.java.com/pt_BR/download/
+
+O Java serve de apoio pra várias coisas como: sites de banco, jogos como Minecraft, etc.
 
 Direitos Autorais
 =================
