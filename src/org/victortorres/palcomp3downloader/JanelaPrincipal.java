@@ -167,9 +167,9 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
         restantes.setText("0");
 
-        jLabel1.setText("Palco MP3 Downloader - versão 1.0");
+        jLabel1.setText("Palco MP3 Downloader - versão 1.1");
 
-        jLabel3.setText("Desenvolvido por: Victor Torres <vpaivatorres@gmail.com>");
+        jLabel3.setText("Desenvolvido por: Victor Torres <vpaivatorres@gmail.com>, Lucas Limeira <lucasalveslm@gmail.com>");
 
         jLabel4.setText("GRATUITO");
 
@@ -219,7 +219,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
                                 .addComponent(btnDesmarcar)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btnDownload)))
-                        .addGap(0, 32, Short.MAX_VALUE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -299,7 +299,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         try {
             resultado = html.capturar(endereco.getURL());
         } catch (IOException ex) {
-            statusID.setText("Falha ao consultar ID.");
+            statusID.setText("ID não encontrado.");
             Logger.getLogger(JanelaPrincipal.class.getName()).log(Level.SEVERE, null, ex);
         }
         //System.out.print(resultado);
@@ -349,22 +349,22 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         } else {
             
             List<String> listaDeURLs = new ArrayList<String>();
-            Matcher m = Pattern.compile("download\" href=\"(http:(.*?)*\\.mp3)\"").matcher(resultado);
+            Matcher m = Pattern.compile("(\\w+://[\\w|.|/|-]+.mp3)\\?\" class=\"download\"").matcher(resultado);
+            m.matches();
             while(m.find()) {
-                listaDeURLs.add(m.group(1));
+                listaDeURLs.add(m.group());
             }
             
+            System.out.println(listaDeURLs.size());
+            
             List<String> listaDeNomes = new ArrayList<String>();
-            m = Pattern.compile("class=\"link\">(.*?)<\\/a>").matcher(resultado);
+            m = Pattern.compile("class=\"lista_nome\" itemprop=\"name\">(.*?)</a>").matcher(resultado);
             while(m.find()) {
                 listaDeNomes.add(m.group(1));
             }
-            int total = 0;
-            for(String iurl : listaDeURLs) {
-                total++;
-            }
+            
             DefaultListModel lista = new DefaultListModel();
-            for(int i = 0; i < total; i++) {
+            for(int i = 0; i < listaDeURLs.size(); i++) {
                 Musica musica = new Musica();
                 musica.nome = listaDeNomes.get(i);
                 try {

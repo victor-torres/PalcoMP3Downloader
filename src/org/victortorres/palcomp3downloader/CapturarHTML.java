@@ -20,6 +20,7 @@ public class CapturarHTML {
     
     public String capturar(URL endereco) throws IOException {
         URLConnection conexao = endereco.openConnection();
+        conexao.setRequestProperty( "User-agent", "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4" );
         BufferedReader entrada = new BufferedReader(new InputStreamReader(conexao.getInputStream(), "UTF-8"));
         String linha;
         StringBuilder retorno = new StringBuilder();

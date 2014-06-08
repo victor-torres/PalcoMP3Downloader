@@ -18,11 +18,11 @@ public class Endereco {
     URL endereco = null;
     
     public Endereco(String id) throws MalformedURLException {
-        endereco = new URL("http://palcomp3.com/" + id + "/");
+        endereco = new URL("http://palcomp3.com/" + id + "/musicas.htm");
     }
     
     public void setEndereco(String id) throws MalformedURLException {
-        endereco = new URL("http://palcomp3.com/" + id + "/");
+        endereco = new URL("http://palcomp3.com/" + id + "/musicas.htm");
     }
     
     public URL getURL() {
