@@ -1,8 +1,6 @@
 Palco MP3 Downloader
 ====================
 
-![ScreenShot](https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-ash3/t1/1800473_806368846043574_611334801_n.jpg)
-
 Faça o download de músicas de um artista do site Palco MP3 todas de uma vez ou apenas algumas.
 
 Entre no site http://palcomp3.com.br/ e busque pela página do seu artista preferido. O ID do artista é o nome que aparece no final do endereço do site quando você está na página do artista. É o "username" dele, apelido, etc...
@@ -24,7 +22,7 @@ Sinta-se à vontade para contribuir com o projeto.
 Download
 ========
 
-Por enquanto o download tá disponível através deste link no DropBox: https://dl.dropboxusercontent.com/u/65368913/Palco%20MP3%20Downloader%20-%20Victor%20Torres.zip
+Você pode baixar a versão mais nova do aplicativo e suas bibliotecas [clicando aqui](http://github.com/victor-torres/PalcoMP3Downloader/releases/latest).
 
 Pode ser que você precise instalar o Java, então, caso issoa conteça, acesse este outro link: http://www.java.com/pt_BR/download/
 
@@ -35,12 +33,27 @@ Direitos Autorais
 
 Não me responsabilizo pelo conteúdo provido pelo site Palco MP3 nem pelos usuários cadastrados no site. Apenas fiz uma ponte entre as músicas do site e o seu computador. É uma feramenta para facilitar a tarefa manual de baixar todas as músicas individualmente.
 
+Changelog
+=========
+
+- Versão 1.1 - Introdução a utilização de Releases
+- Versão 1.1 - Correções para funcionar com a atualização do Palco MP3 e otimizações no código
+- Versão 1.0 - Primeira versão funcional
+
+Known Issues
+============
+
+- Problema na listagem quando o artista possui mais de 100 músicas
+
 Desenvolvedores
 ===============
 
 Programa escrito em Java. O código está um pouco bagunçado e algumas coisas podem ser melhoradas porque fiz tudo nas pressas, mas está completamente funcional.
 
 Se puder, contribua com um fork e depois um push request com as melhorias realizadas.
+
+- Lucas Limeira: atualização para a nova versão do Palco MP3
+- Victor Torres: criador do projeto
 
 Licença
 =======
