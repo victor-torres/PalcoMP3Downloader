@@ -1,7 +1,7 @@
 Palco MP3 Downloader
 ====================
 
-![Screen Shot](https://github.com/victor-torres/PalcoMP3Downloader/edit/master/README.md)
+![Screen Shot](http://i59.tinypic.com/ae8hm9.png)
 
 Faça o download de músicas de um artista do site Palco MP3 todas de uma vez ou apenas algumas.
 
