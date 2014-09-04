@@ -24,6 +24,8 @@ Download
 
 Você pode baixar a versão mais nova do aplicativo e suas bibliotecas [clicando aqui](http://github.com/victor-torres/PalcoMP3Downloader/releases/latest).
 
+O arquivo é compatível com Windows, Linux e Mac OS X.
+
 Pode ser que você precise instalar o Java, então, caso issoa conteça, acesse este outro link: http://www.java.com/pt_BR/download/
 
 O Java serve de apoio pra várias coisas como: sites de banco, jogos como Minecraft, etc.
