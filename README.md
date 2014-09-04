@@ -1,6 +1,8 @@
 Palco MP3 Downloader
 ====================
 
+![Screen Shot](https://github.com/victor-torres/PalcoMP3Downloader/edit/master/README.md)
+
 Faça o download de músicas de um artista do site Palco MP3 todas de uma vez ou apenas algumas.
 
 Entre no site http://palcomp3.com.br/ e busque pela página do seu artista preferido. O ID do artista é o nome que aparece no final do endereço do site quando você está na página do artista. É o "username" dele, apelido, etc...
