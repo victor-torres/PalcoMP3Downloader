@@ -1,7 +1,7 @@
 Palco MP3 Downloader
 ====================
 
-![Screen Shot](http://i59.tinypic.com/ae8hm9.png)
+![Screen Shot](http://i61.tinypic.com/8zpnvt.png)
 
 Faça o download de músicas de um artista do site Palco MP3 todas de uma vez ou apenas algumas.
 
@@ -40,6 +40,8 @@ Não me responsabilizo pelo conteúdo provido pelo site Palco MP3 nem pelos usu�
 Changelog
 =========
 
+- Versão 1.2 - Correções para listar artistas com mais de 100 músicas
+- Versão 1.2 - Substituição dos nomes dos colaboradores pelo endereço do projeto no GitHub
 - Versão 1.1 - Introdução a utilização de Releases
 - Versão 1.1 - Correções para funcionar com a atualização do Palco MP3 e otimizações no código
 - Versão 1.0 - Primeira versão funcional
@@ -47,7 +49,7 @@ Changelog
 Known Issues
 ============
 
-- Problema na listagem quando o artista possui mais de 100 músicas
+Nenhum problema conhecido no momento.
 
 Desenvolvedores
 ===============
@@ -56,8 +58,9 @@ Programa escrito em Java. O código está um pouco bagunçado e algumas coisas p
 
 Se puder, contribua com um fork e depois um push request com as melhorias realizadas.
 
-- Lucas Limeira: atualização para a nova versão do Palco MP3
-- Victor Torres: criador do projeto
+- Victor Torres (@victor-torres): criador do projeto
+- Lucas Limeira (@lucasalveslm): atualização para a nova versão do Palco MP3
+- Rubem Kalebe (@rubemkalebe): ajuda na resolução do erro ao listar mais de 100 músicas
 
 Licença
 =======
