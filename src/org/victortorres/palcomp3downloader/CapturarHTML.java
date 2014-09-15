@@ -28,6 +28,10 @@ public class CapturarHTML {
             retorno.append(linha);
         }
         entrada.close();
+        
+        // Debug
+        // System.out.println(retorno.toString());
+        
         return retorno.toString();
     }
     

@@ -349,18 +349,31 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         } else {
             
             List<String> listaDeURLs = new ArrayList<String>();
-            Matcher m = Pattern.compile("(\\w+://[\\w|.|/|-]+.mp3)\\?\" class=\"download\"").matcher(resultado);
+            List<String> listaDeNomes = new ArrayList<String>();
+            
+            Matcher m = Pattern.compile("<a href=\"(\\w+://[\\w|.|/|-]+.mp3)\\?\" class=\"download\"( target=\"_blank\")* download=\"(.*?)\\.mp3\">baixar</a>").matcher(resultado);
             m.matches();
             while(m.find()) {
-                listaDeURLs.add(m.group());
+                listaDeURLs.add(m.group(1));
+                listaDeNomes.add(m.group(3));
             }
             
-            System.out.println(listaDeURLs.size());
-            
-            List<String> listaDeNomes = new ArrayList<String>();
-            m = Pattern.compile("class=\"lista_nome\" itemprop=\"name\">(.*?)</a>").matcher(resultado);
-            while(m.find()) {
-                listaDeNomes.add(m.group(1));
+            // Caso não consiga encontrar pelo método padrão, tenta o método alternativo
+            if(listaDeURLs.size() == 0 || listaDeNomes.size() == 0) {
+                listaDeURLs = new ArrayList<String>();
+                listaDeNomes = new ArrayList<String>();
+                
+                m = Pattern.compile("(\\w+://[\\w|.|/|-]+.mp3)\\?\" class=\"download\"").matcher(resultado);
+                m.matches();
+                while(m.find()) {
+                    listaDeURLs.add(m.group(0));
+                }
+                
+                m = Pattern.compile("class=\"lista_nome\" itemprop=\"name\">(.*?)</a>").matcher(resultado);
+                m.matches();
+                while(m.find()) {
+                    listaDeNomes.add(m.group(1));
+                }
             }
             
             DefaultListModel lista = new DefaultListModel();
