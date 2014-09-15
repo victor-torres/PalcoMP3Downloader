@@ -167,9 +167,9 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
         restantes.setText("0");
 
-        jLabel1.setText("Palco MP3 Downloader - versão 1.1");
+        jLabel1.setText("Palco MP3 Downloader - versão 1.2");
 
-        jLabel3.setText("Desenvolvido por: Victor Torres <vpaivatorres@gmail.com>, Lucas Limeira <lucasalveslm@gmail.com>");
+        jLabel3.setText("http://github.com/victor-torres/PalcoMP3Downloader");
 
         jLabel4.setText("GRATUITO");
 

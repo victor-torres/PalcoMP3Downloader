@@ -259,12 +259,12 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Palco MP3 Downloader - vers&#xe3;o 1.1"/>
+        <Property name="text" type="java.lang.String" value="Palco MP3 Downloader - vers&#xe3;o 1.2"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Desenvolvido por: Victor Torres &lt;vpaivatorres@gmail.com&gt;, Lucas Limeira &lt;lucasalveslm@gmail.com&gt;"/>
+        <Property name="text" type="java.lang.String" value="http://github.com/victor-torres/PalcoMP3Downloader"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
